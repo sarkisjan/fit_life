@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
 import Logo from "../assets/images/fitlife_logo.png";
 import fbIcon from "../assets/icons/fbIcon.svg";
 import instaIcon from "../assets/icons/instaIcon.svg";

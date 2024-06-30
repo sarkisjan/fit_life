@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 const BmiChart = ({ degree, bmi }) => {
   // const [prevDegree, setPrevDegree] = useState(0);
   // const key = Math.floor(degree);

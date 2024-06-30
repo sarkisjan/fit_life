@@ -1,9 +1,6 @@
 import React from "react";
 import { Typography, Stack, Button } from "@mui/material";
 
-import BodyPartImage from "../assets/icons/body-part.png";
-// import {bodyPartIcons} from '../assets/icons/icons.js';
-
 import TargetImage from "../assets/icons/target.png";
 import EquipmentImage from "../assets/icons/equipment.png";
 import Banner from "./Banner";
@@ -11,10 +8,6 @@ import Banner from "./Banner";
 const Detail = ({ exerciseDetail }) => {
   const { bodyPart, image, name, primaryMuscles, equipment, instructions } =
     exerciseDetail;
-  // console.log(bodyPart);
-  // console.log(`../assets/icons/bodyParts/${bodyPart}.png`);
-  // let BodyPartImage = `/icons/bodyParts/${bodyPart.replace(/ /g, '')}.png`;
-  // console.log(bodyPartIcons(bodyPart));
 
   const extraDetail = [
     {

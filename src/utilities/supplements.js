@@ -130,8 +130,6 @@ const GNComega369 =
 const nordicOmega3 =
   "https://www.amazon.com/Nordic-Naturals-Ultimate-Omega-SoftGels/dp/B0739KKHWL/ref=sr_1_3?crid=6C2M2AD44HIT&dib=eyJ2IjoiMSJ9.yDtTKxplmardFXKcK_O-IWQarCVubPA_wXXuPqVaFFtrfmRVmKBuP9uETixuA7AZ4g117UBCnm_2Kgg-9VJ1BYFaPiqNkPe4nbLj5_T5WmcZ2PKJnq7p1CX-clAR0cgHaik7Yf3jkNRFedjsRyNUumNlyQq-VO9PXb6rzgchq09LqUplB43kUEttwVXlGeeFLULi_GJSZYa34KjFWosr69vvIRoG87Akw2h0gdzPaPnJxlrt-TT1gmHk5p_4ikV5Vh2H97ZEfGbcJPyCirT0H9H764P2kRfvR0m8gB7UJxo.5IbM2SfAqj8Jj4j5ZB9y5jJcdlPqff57yhgkwjTu-5U&dib_tag=se&keywords=omega+3&qid=1718625541&sprefix=omega+3%2Caps%2C186&sr=8-3";
 
-const fishOilLink = "";
-
 const NOWfoodZinc =
   "https://www.amazon.com/NOW-Zinc-Picolinate-50mg-Capsules/dp/B001CA6WNG/ref=sr_1_4?crid=3OCA8ULCKPA9O&dib=eyJ2IjoiMSJ9.Rhd4cy4m3poO6HCt8oav53p-Q_FW0An3Ye2PLdO-tgKhnxWSX346E_mueLi-BnJ_qc9LcqmPjFsTuaCCv7w-lK6ccSrzqtrzGJ4e4VXXYdMYJlH2l8KDGtma4-o9f8y5YecGle460ziBcdGTbgG4YhYuVZZLfFaL3AiA_0rh7JtWgLg36mpvG9R_LVS4MPAj12goI0EYVoVCPy4AGSF5CftPBdDyxImmapJpt7ruvn2vzDe2dHWZiSvfnI3WFUBBCWJAmCQ66mJgA6qSjt6RaBJCghR_1VUpHi-p5ibM5YY.NjB0a2ywzDijjrdTa6mdN38r1suxnuaZSSrb6WW8eOw&dib_tag=se&keywords=zinc&qid=1718701729&refinements=p_123%3A231615%7C313676&rnid=85457740011&s=hpc&sprefix=zinc%2Caps%2C194&sr=1-4&th=1";
 const bronsonZinc =
