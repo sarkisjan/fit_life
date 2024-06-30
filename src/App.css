@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+html {
+  overflow: -moz-scrollbars-vertical !important;
+  overflow-y: scroll !important;
+}
+* {
+  font-family: "Abel", sans-serif !important;
+  padding: 0px;
+  /* margin: 0px auto; */
+  box-sizing: border-box;
+}
+body {
+  font-weight: 400;
+  font-style: normal;
+  /* font-family: 'Josefin Sans'; */
+  /* background-image: url("./assets/images/fitness.png");
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    background-position-y: top; */
+  background-color: rgb(47, 49, 66);
+
+  /* color: rgb(31, 33, 54); color for text - instructions */
+  /* background-image: linear-gradient(180deg , rgba(51, 53, 86, 0.434), white); */
+}
+.heroBanner {
+  background-image: url("./assets/images/fitness.png");
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+  background-position-y: top;
+}
+/* ---------animation for moto------------ */
+.moto-container {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  height: 1.2em; /* Adjust based on font size to prevent layout shift */
+}
+
+.moto-line {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  top: -100%;
+  display: flex;
+  justify-content: start;
+}
+
+.visible {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, fadeOut 0.5s 3.5s forwards;
+}
+/* .moto-line.visible .letter {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, fadeOut 0.5s 3.5s forwards;
+} */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* ----- up animation for moto ----------- */
+/* --------pagination-------------- */
+.MuiPaginationItem-root {
+  color: white !important;
+}
+
+/* ------------------------- */
+/* ::-webkit-scrollbar {
+  width: 20px; 
+ background-color: #fff;
+} */
+
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 50%;
+  /* right: 80px; */
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+  z-index: 2;
+}
+.left-arrow img,
+.right-arrow img {
+  width: 50px;
+  height: 50px;
+}
+.right-arrow {
+  right: 60px;
+}
+.left-arrow {
+  left: 60px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.3, 1.3);
+}
+.react-horizontal-scrolling-menu--scroll-container {
+  width: 1400px;
+  overflow-x: hidden;
+}
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-image {
+  width: 75vh;
+  height: 75vh;
+}
+
+.hero-banner-box {
+  background-image: linear-gradient(
+    to left,
+    rgb(47, 49, 66),
+    rgba(47, 49, 66, 0.5),
+    rgba(47, 49, 66, 0)
+  );
+  position: absolute;
+
+  right: 0px;
+  top: 0px;
+  width: 300px;
+  height: 100vh;
+  /* margin-top: 0px; */
+  border-bottom-left-radius: 50%;
+}
+.hero-banner-img {
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: auto;
+  height: 100vh;
+  margin-top: 0px;
+  border-bottom-left-radius: 50%;
+}
+
+.exercise-card {
+  width: 400px;
+  height: 480px;
+  background: #fff;
+  border-top: 4px solid #ff2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+/* ------------------------------------------------------- */
+/* .bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  } */
+.bodyIcon {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+
+  width: 120px;
+  height: 120px;
+}
+
+/* .exercise-card:hover,
+  .bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+  } */
+
+.exercise-card:hover,
+.bodyIcon:hover {
+  transform: scale(1.06, 1.06);
+}
+/* ------------------------------------------------------- */
+.search-btn:hover {
+  color: #ff2625 !important;
+  border: 1px solid #ff2625 !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+.exerciseCard {
+  background-color: white;
+}
+.exerciseCard h1,
+.exerciseCard h2,
+.exerciseCard h3,
+.exerciseCard p {
+  margin: 2px 4px;
+}
+/* -------------------------------- */
+.supplementList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 80px;
+  /* width: 800px; */
+}
+.supplementList p {
+  color: white;
+  text-align: justify;
+}
+.supplementList strong {
+  color: #ff2625;
+}
+.supplementFilter {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.select-container {
+  position: relative;
+  width: 220px;
+  height: 30px;
+}
+.label-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+.select-box {
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+  padding: 0 30px 0 15px;
+  width: 260px;
+  height: 100%;
+  background-color: rgba(244, 70, 48, 0.8);
+  font-size: 18px;
+  color: white;
+}
+
+.select-box option {
+  color: black;
+  background-color: white; /* Background color for the options */
+}
+
+.select-box option:checked {
+  color: white;
+  background-color: rgba(
+    244,
+    70,
+    48,
+    0.8
+  ); /* Background color for the selected option */
+}
+.icon-container {
+  display: flex;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff2625;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.icon-container svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+/* -------------------------- */
+.bmiCalculator {
+  padding: 20px;
+  background-color: #fff;
+  /* margin-right: 10px; */
+}
+.bmiCalculator h1 {
+  color: #ff2625;
+}
+.results strong {
+  color: #ff2625;
+}
+.results h2 {
+  color: #fff;
+  background-color: rgb(35, 180, 98);
+  padding: 0 20px;
+}
+.bmiLink {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+.filterLink {
+  display: none;
+  position: relative;
+  top: 40px;
+  left: 80px;
+}
+/* -------------------------- */
+.menu-btn {
+  display: none;
+  width: 65px;
+  height: 65px;
+  /* top: 10px;
+  right: 10px; */
+  position: fixed;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.btn-burger {
+  width: 35px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ff2625;
+  transition: all 0.5s ease-in-out;
+
+  /* position: relative; */
+}
+.btn-burger::before,
+.btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ff2625;
+  transition: all 0.5s ease-in-out;
+}
+.btn-burger::before {
+  transform: translateY(-10px);
+}
+.btn-burger::after {
+  transform: translateY(10px);
+}
+/* ANIMATION of burger btn */
+.menu-btn.open .btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.mainMenu {
+  display: flex;
+}
+.bannerImage {
+  /* object-fit: cover; */
+  /* width: auto; */
+  max-width: 150px;
+  /* height: auto; */
+  max-height: 180px;
+  padding: 15px;
+}
+/* ------------ About ------------- */
+.about-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-content ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+/* -------------footer---------- */
+.footer {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo-img {
+  height: 130px;
+}
+
+.footer-nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-social {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social-icon {
+  height: 40px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 1050px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* .bmiLink {
+    display: block;
+  }
+
+  .filterLink {
+    display: block;
+  } */
+  .bannerImage {
+    max-width: 130px;
+    padding: 5px;
+    max-height: 140px;
+  }
+  .bodyIcon {
+    width: 80px;
+    height: 80px;
+  }
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 700px;
+  }
+
+  /* .react-horizontal-scrolling-menu--scroll-container {
+      width: 100%;
+      overflow-x: hidden;
+    } */
+
+  /* .left-arrow,
+    .right-arrow {
+      position: static !important;
+    } */
+
+  .hero-banner-img,
+  .hero-banner-box {
+    display: none;
+  }
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+  }
+  .mainMenu {
+    z-index: 3;
+    /* font-size: x-large; */
+    /* display: none; */
+    height: 100vh;
+    background-image: linear-gradient(135deg, #ffffff, white);
+    opacity: 0.89;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    font-weight: 600;
+    top: -100%;
+    right: 0;
+    left: 0;
+    transition: top 1s ease;
+  }
+}
+@media screen and (max-width: 750px) {
+  .exercise-card {
+    width: 280px;
+  }
+  .exerciseCard {
+    height: 830px !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 320px !important;
+    background-color: white;
+  }
+  .exerciseInfo {
+    border-bottom-left-radius: 10px;
+  }
+  /* .exerciseCard h1,.exerciseCard h2,.exerciseCard h3,  .exerciseCard p{
+      margin: 2px;
+
+    } */
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer-logo-img {
+    height: 80px;
+  }
+  /* .bannerImage {
+    max-width: 60px;
+    padding: 2px;
+    max-height: 100px;
+  } */
+  .bannerTitle {
+    font-size: 10px !important;
+  }
+}
+/* @media screen and (max-width:450px) {
+      .inputField {
+        width: 300px;
+      }
+    .react-horizontal-scrolling-menu--scroll-container {
+      width: 200px;
+  
+    }
+    .bodyIcon {
+      width: 100px;
+      height: 100px;
+    }
+    .bodyPart-card {
+      width: 150px;
+      height: 150px;
+    }
+  } */
