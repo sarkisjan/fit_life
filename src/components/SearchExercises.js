@@ -24,7 +24,7 @@ const SearchExercises = ({
   useEffect(() => {
     const fetchBodyPartList = async () => {
       const bodyPartsList = await fetchData(
-        "http://localhost:5000/exercises/bodyPartList",
+        "https://fitnesslifeapi.onrender.com/exercises/bodyPartList",
         exercisesOptions
       );
       setBodyParts(["all", ...bodyPartsList]);
@@ -39,7 +39,7 @@ const SearchExercises = ({
       setSearched(search);
 
       const exercisesData = await fetchData(
-        "http://localhost:5000/exercises",
+        "https://fitnesslifeapi.onrender.com/exercises",
         exercisesOptions
       );
       // console.log( exercisesData.results[0]);
