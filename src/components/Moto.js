@@ -20,17 +20,12 @@ const Moto = () => {
   return (
     <div className="moto-container">
       {mottoParts.map((part, index) => (
-        <p
+        <span
           key={index}
           className={`moto-line ${index === currentPartIndex ? "visible" : ""}`}
         >
           {part}
-          {/* {part.split("").map((letter, i) => (
-            <span key={i} className="letter">
-              {letter}
-            </span>
-          ))} */}
-        </p>
+        </span>
       ))}
     </div>
   );

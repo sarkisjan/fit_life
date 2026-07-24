@@ -21,7 +21,7 @@ const Exercises = ({
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   const currentExercises = exercises.slice(
     indexOfFirstExercise,
-    indexOfLastExercise
+    indexOfLastExercise,
   );
 
   const paginate = (e, value) => {
@@ -38,13 +38,13 @@ const Exercises = ({
         let fetchedData = [];
         if (bodyPart === "all") {
           fetchedData = await fetchData(
-            "http://localhost:5000/exercises",
-            exercisesOptions
+            "https://fitnesslifeapi.onrender.com/exercises",
+            exercisesOptions,
           );
         } else {
           fetchedData = await fetchData(
-            `http://localhost:5000/exercises/bodyPart/${bodyPart}`,
-            exercisesOptions
+            `https://fitnesslifeapi.onrender.com/exercises/bodyPart/${bodyPart}`,
+            exercisesOptions,
           );
         }
         setExercises(fetchedData);
@@ -53,7 +53,7 @@ const Exercises = ({
       };
       fetchExercisesData();
     }
-  }, [bodyPart]);
+  }, [bodyPart, setCurrentPage, setExercises, setSearched]);
   return (
     <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
       <Typography
@@ -67,10 +67,10 @@ const Exercises = ({
         {!searched && bodyPart === "all"
           ? `List of All exercises`
           : !searched
-          ? `Exercises For ${bodyPart.toUpperCase()}`
-          : exercises.length > 0
-          ? `${exercises.length}  exercises found for: "${searched}"`
-          : `No exercises found for "${searched}". Try again`}
+            ? `Exercises For ${bodyPart.toUpperCase()}`
+            : exercises.length > 0
+              ? `${exercises.length}  exercises found for: "${searched}"`
+              : `No exercises found for "${searched}". Try again`}
       </Typography>
       <Stack
         sx={{ gap: { lg: "110px", xs: "50px" } }}
