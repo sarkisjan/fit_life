@@ -13,15 +13,8 @@ html {
 body {
   font-weight: 400;
   font-style: normal;
-  /* font-family: 'Josefin Sans'; */
-  /* background-image: url("./assets/images/fitness.png");
-    background-repeat: no-repeat;
-    background-position-x: 30%;
-    background-position-y: top; */
-  background-color: rgb(47, 49, 66);
 
-  /* color: rgb(31, 33, 54); color for text - instructions */
-  /* background-image: linear-gradient(180deg , rgba(51, 53, 86, 0.434), white); */
+  background-color: rgb(47, 49, 66);
 }
 .heroBanner {
   background-image: url("./assets/images/fitness.png");
@@ -45,17 +38,15 @@ body {
   opacity: 0;
   top: -100%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .visible {
   opacity: 0;
-  animation: fadeIn 0.5s forwards, fadeOut 0.5s 3.5s forwards;
+  animation:
+    fadeIn 0.5s forwards,
+    fadeOut 0.5s 3.5s forwards;
 }
-/* .moto-line.visible .letter {
-  opacity: 0;
-  animation: fadeIn 0.5s forwards, fadeOut 0.5s 3.5s forwards;
-} */
 
 @keyframes fadeIn {
   to {
@@ -78,10 +69,6 @@ body {
 }
 
 /* ------------------------- */
-/* ::-webkit-scrollbar {
-  width: 20px; 
- background-color: #fff;
-} */
 
 .right-arrow,
 .left-arrow {
@@ -181,10 +168,7 @@ body {
   height: 326px;
 }
 /* ------------------------------------------------------- */
-/* .bodyPart-card {
-    transform: scale(1, 1);
-    transition: 0.3s all ease-in-out;
-  } */
+
 .bodyIcon {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
@@ -192,11 +176,6 @@ body {
   width: 120px;
   height: 120px;
 }
-
-/* .exercise-card:hover,
-  .bodyPart-card:hover {
-    transform: scale(1.1, 1.1);
-  } */
 
 .exercise-card:hover,
 .bodyIcon:hover {
@@ -230,7 +209,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 80px;
   /* width: 800px; */
@@ -282,12 +261,8 @@ body {
 
 .select-box option:checked {
   color: white;
-  background-color: rgba(
-    244,
-    70,
-    48,
-    0.8
-  ); /* Background color for the selected option */
+  background-color: rgba(244, 70, 48, 0.8);
+  /* Background color for the selected option */
 }
 .icon-container {
   display: flex;
@@ -502,13 +477,6 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
-  /* .bmiLink {
-    display: block;
-  }
-
-  .filterLink {
-    display: block;
-  } */
   .bannerImage {
     max-width: 130px;
     padding: 5px;
@@ -525,16 +493,6 @@ body {
   .react-horizontal-scrolling-menu--scroll-container {
     width: 700px;
   }
-
-  /* .react-horizontal-scrolling-menu--scroll-container {
-      width: 100%;
-      overflow-x: hidden;
-    } */
-
-  /* .left-arrow,
-    .right-arrow {
-      position: static !important;
-    } */
 
   .hero-banner-img,
   .hero-banner-box {
@@ -591,10 +549,7 @@ body {
   .exerciseInfo {
     border-bottom-left-radius: 10px;
   }
-  /* .exerciseCard h1,.exerciseCard h2,.exerciseCard h3,  .exerciseCard p{
-      margin: 2px;
 
-    } */
   .react-horizontal-scrolling-menu--scroll-container {
     width: 350px;
   }
@@ -608,29 +563,8 @@ body {
   .footer-logo-img {
     height: 80px;
   }
-  /* .bannerImage {
-    max-width: 60px;
-    padding: 2px;
-    max-height: 100px;
-  } */
+
   .bannerTitle {
     font-size: 10px !important;
   }
 }
-/* @media screen and (max-width:450px) {
-      .inputField {
-        width: 300px;
-      }
-    .react-horizontal-scrolling-menu--scroll-container {
-      width: 200px;
-  
-    }
-    .bodyIcon {
-      width: 100px;
-      height: 100px;
-    }
-    .bodyPart-card {
-      width: 150px;
-      height: 150px;
-    }
-  } */
