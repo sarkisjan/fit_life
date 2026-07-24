@@ -19,7 +19,7 @@ const ExerciseDetail = () => {
     window.scrollTo({ top: 150, behavior: 'smooth' });
 
     const fetchExercisesData = async () => {
-      const exerciseDbUrl = 'http://localhost:5000';
+      const exerciseDbUrl = 'https://fitnesslifeapi.onrender.com/';
       // const youtubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com';
 
       const exerciseDetailData = await fetchData(`${exerciseDbUrl}/exercises/id/${id}`, exercisesOptions);
