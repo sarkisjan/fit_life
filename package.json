@@ -19,8 +19,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "npm-run-all -p start-api start-react",
-    "start-api": "nodemon src/api/index.js",
+    "start": "npm-run-all -p start-react",
     "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
