@@ -18,16 +18,16 @@ const Moto = () => {
   }, []);
 
   return (
-    <div className="moto-container">
+    <span className="moto-container">
       {mottoParts.map((part, index) => (
-        <span
+        <strong
           key={index}
           className={`moto-line ${index === currentPartIndex ? "visible" : ""}`}
         >
           {part}
-        </span>
+        </strong>
       ))}
-    </div>
+    </span>
   );
 };
 
