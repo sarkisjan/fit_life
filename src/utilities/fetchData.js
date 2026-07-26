@@ -1,16 +1,15 @@
 // import { fetchData } from './api/index.js';
-export const fetchData = async (url,options)=>{
-    const response = await fetch(url,options);
-    const data = await response.json();
-    console.log(data);
-    return data;
-}
+export const fetchData = async (url, options) => {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  // console.log(data);
+  return data;
+};
 export const exercisesOptions = {
-    method: 'GET',
-	headers: {
-		'Content-Type': 'application/json' 
-		
-	}
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
 };
 // export const fetchData = async (url, options)=>{
 //     const response = await fetch(url, options);
