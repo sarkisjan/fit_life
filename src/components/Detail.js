@@ -80,7 +80,7 @@ const Detail = ({ exerciseDetail }) => {
             gap: { lg: "40px", sm: "30px", xs: "20px" },
           }}
         >
-          {extraDetail?.map((item) => (
+          {extraDetail.map((item) => (
             <Stack
               key={item.name}
               direction="row"

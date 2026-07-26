@@ -32,7 +32,7 @@ const Banner = ({ bannerDetail, supplementName }) => {
         },
       }}
     >
-      {bannerDetail.bannerImage.map((img, index) => (
+      {bannerDetail.bannerImage?.map((img, index) => (
         <Stack
           key={index}
           sx={{

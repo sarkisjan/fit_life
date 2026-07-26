@@ -49,7 +49,7 @@ function SupplementList({ supplements }) {
               >
                 {supplement.name}
               </Typography>
-              {console.log(supplement)}
+              {/* {console.log(supplement)} */}
               <p>
                 <strong>Type:</strong> {supplement.type} ({supplement.subtype})
               </p>

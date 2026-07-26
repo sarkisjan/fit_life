@@ -31,13 +31,13 @@ const RightArrow = () => {
 // bodyPart is passed from Home component
 // setBodyPart is passed from Home component
 const HorizontalScrollbar = ({ data, bodyParts, bodyPart, setBodyPart }) => {
-  console.log(`ova e od home horizontal: ${data}`);
+  // console.log(`ova e od home horizontal: ${data}`);
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {data.map((item) => (
         <Box
           key={item.id || item}
-          itemId={item.id || item}
+          itemID={item.id || item}
           title={item.id || item}
           m="0 40px"
         >
