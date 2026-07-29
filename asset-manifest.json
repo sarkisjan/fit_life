@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9bfc9cac.css",
-    "main.js": "/static/js/main.8baae8b4.js",
-    "static/media/hero.png": "/static/media/hero.a6e415d8fcfd0264df84.png",
-    "static/media/target.png": "/static/media/target.41f9a72c9d3b4ed3d3af.png",
-    "static/media/right-arrow.png": "/static/media/right-arrow.2f417926391c85c2479c.png",
-    "static/media/left-arrow.png": "/static/media/left-arrow.7f0e5bef5aeb225b7c25.png",
-    "static/media/fitness.png": "/static/media/fitness.ad596be447dae7053df9.png",
-    "static/media/equipment.png": "/static/media/equipment.91c7d48211d0ac01a076.png",
-    "static/media/instaIcon.svg": "/static/media/instaIcon.b30ec17b9b66a24931d5b29204ed343d.svg",
-    "static/media/fbIcon.svg": "/static/media/fbIcon.513ba589209ed58ac6a5df1d20e2be40.svg",
-    "index.html": "/index.html",
-    "main.9bfc9cac.css.map": "/static/css/main.9bfc9cac.css.map",
-    "main.8baae8b4.js.map": "/static/js/main.8baae8b4.js.map"
+    "main.css": "/fit_life/static/css/main.b7ac262c.css",
+    "main.js": "/fit_life/static/js/main.90c4f5ff.js",
+    "static/media/hero.png": "/fit_life/static/media/hero.a6e415d8fcfd0264df84.png",
+    "static/media/target.png": "/fit_life/static/media/target.41f9a72c9d3b4ed3d3af.png",
+    "static/media/right-arrow.png": "/fit_life/static/media/right-arrow.2f417926391c85c2479c.png",
+    "static/media/left-arrow.png": "/fit_life/static/media/left-arrow.7f0e5bef5aeb225b7c25.png",
+    "static/media/fitness.png": "/fit_life/static/media/fitness.ad596be447dae7053df9.png",
+    "static/media/equipment.png": "/fit_life/static/media/equipment.91c7d48211d0ac01a076.png",
+    "static/media/instaIcon.svg": "/fit_life/static/media/instaIcon.b30ec17b9b66a24931d5b29204ed343d.svg",
+    "static/media/fbIcon.svg": "/fit_life/static/media/fbIcon.513ba589209ed58ac6a5df1d20e2be40.svg",
+    "index.html": "/fit_life/index.html",
+    "main.b7ac262c.css.map": "/fit_life/static/css/main.b7ac262c.css.map",
+    "main.90c4f5ff.js.map": "/fit_life/static/js/main.90c4f5ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bfc9cac.css",
-    "static/js/main.8baae8b4.js"
+    "static/css/main.b7ac262c.css",
+    "static/js/main.90c4f5ff.js"
   ]
 }
