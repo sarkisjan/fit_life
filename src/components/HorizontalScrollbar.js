@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Box, Typography } from "@mui/material";
+
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 import BodyPart from "./BodyPart";
@@ -34,31 +35,38 @@ const HorizontalScrollbar = ({ data, bodyParts, bodyPart, setBodyPart }) => {
   // console.log(`ova e od home horizontal: ${data}`);
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-      {data.map((item) => (
-        <Box
-          key={item.id || item}
-          itemID={item.id || item}
-          title={item.id || item}
-          m="0 40px"
-        >
-          {/* instead of rendering the items directly in this component 
+      {data.map((item) => {
+        const idValue = item.id || item;
+        return (
+          <Box
+            key={idValue}
+            title={idValue}
+            itemId={idValue}
+            component={(props) => {
+              const { itemId, ...cleanProps } = props;
+              return <section {...cleanProps} />;
+            }}
+            m="0 40px"
+          >
+            {/* instead of rendering the items directly in this component 
                   we are passing to another component BodyPart */}
-          {/* bodyPart (is the selected bodyPart) and setBodyPart are properties that we 
+            {/* bodyPart (is the selected bodyPart) and setBodyPart are properties that we 
                   gonna pass through Props  */}
 
-          {bodyParts ? (
-            <BodyPart
-              item={item}
-              bodyPart={bodyPart}
-              setBodyPart={setBodyPart}
-            />
-          ) : (
-            <ExerciseCard exercise={item} />
-          )}
+            {bodyParts ? (
+              <BodyPart
+                item={item}
+                bodyPart={bodyPart}
+                setBodyPart={setBodyPart}
+              />
+            ) : (
+              <ExerciseCard exercise={item} />
+            )}
 
-          {/* // icon = {item.replace(/\s/g, '')} */}
-        </Box>
-      ))}
+            {/* icon = {item.replace(/\s/g, '')} */}
+          </Box>
+        );
+      })}
     </ScrollMenu>
   );
 };

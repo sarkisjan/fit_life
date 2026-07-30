@@ -26,19 +26,21 @@ const ExerciseDetail = () => {
         `${exerciseDbUrl}/exercises/id/${id}`,
         exercisesOptions,
       );
-      setExerciseDetail(exerciseDetailData[0]);
 
-      // const exerciseVideosData = await fetchData(`${youtubeSearchUrl}/search?query=${exerciseDetailData.name} exercise`, youtubeOptions);
-      // setExerciseVideos(exerciseVideosData.contents);
+      // setExerciseDetail(exerciseDetailData[0]);
+
+      // Create a local variable holding the individual exercise object
+      const currentExercise = exerciseDetailData[0];
+      setExerciseDetail(currentExercise); // Safe to set state here
 
       const primaryMusclesExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/primaryMuscles/${exerciseDetail.primaryMuscles}`,
+        `${exerciseDbUrl}/exercises/primaryMuscles/${currentExercise.primaryMuscles}`,
         exercisesOptions,
       );
       setPrimaryMusclesExercises(primaryMusclesExercisesData);
-
+      console.log(exerciseDetail);
       const equimentExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/equipment/${exerciseDetail.equipment[0]}`,
+        `${exerciseDbUrl}/exercises/equipment/${currentExercise.equipment[0]}`,
         exercisesOptions,
       );
       setEquipmentExercises(equimentExercisesData);

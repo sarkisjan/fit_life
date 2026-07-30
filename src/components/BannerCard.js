@@ -29,7 +29,7 @@ const BannerCard = ({ productImage, productName, productLink, data }) => {
         </Typography>
         <img
           className="bannerImage"
-          src={productImage}
+          src={process.env.PUBLIC_URL + productImage}
           alt={productName && productName}
         />
         <Typography>

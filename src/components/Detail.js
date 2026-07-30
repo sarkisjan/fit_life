@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Stack, Button } from "@mui/material";
+import { Typography, Stack, Button, Box } from "@mui/material";
 
 import TargetImage from "../assets/icons/target.png";
 import EquipmentImage from "../assets/icons/equipment.png";
@@ -52,26 +52,35 @@ const Detail = ({ exerciseDetail }) => {
           {name}
         </Typography>
 
-        <Typography
+        <Box
           sx={{
             fontSize: { lg: "20px", sm: "18px", xs: "15px" },
             textAlign: "justify",
           }}
           color="#FFF"
         >
-          {/* <ul>
-           { instructions.map( inst = > {
-            <li>inst</li>;
-           })}
-          </ul> */}
-          <h3>Instructions:</h3>
-          {instructions}
+          {/* <h3>Instructions:</h3>
+          {instructions} */}
 
-          {/* Exercises keep you strong.{' '}
-          <span style={{ textTransform: 'capitalize' }}>{name}</span> bup is one
-          of the best <br /> exercises to target your {primaryMuscles}. It will help you improve your{' '}
-          <br /> mood and gain energy. */}
-        </Typography>
+          <Typography
+            variant="h5"
+            component="h3"
+            sx={{ fontWeight: "bold", mb: "10px" }}
+          >
+            Instructions:
+          </Typography>
+
+          {/* Ако инструкциите се низа од чекори, ги прикажуваме како посебни параграфи */}
+          {Array.isArray(instructions) ? (
+            instructions.map((step, index) => (
+              <Typography key={index} sx={{ mb: "10px", fontSize: "inherit" }}>
+                {step}
+              </Typography>
+            ))
+          ) : (
+            <Typography sx={{ fontSize: "inherit" }}>{instructions}</Typography>
+          )}
+        </Box>
 
         <Stack
           sx={{
@@ -99,7 +108,8 @@ const Detail = ({ exerciseDetail }) => {
                 <img
                   src={
                     bodyPart === item.name
-                      ? `/icons/bodyParts/${item.icon}.png`
+                      ? process.env.PUBLIC_URL +
+                        `/icons/bodyParts/${item.icon}.png`
                       : item.icon
                   }
                   alt={bodyPart}

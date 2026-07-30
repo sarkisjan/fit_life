@@ -29,7 +29,10 @@ const BodyPart = ({ item, icon, bodyPart, setBodyPart }) => {
     >
       <img
         className="bodyIcon"
-        src={`/icons/bodyParts/${item.replace(/\s/g, "")}.png`}
+        src={
+          process.env.PUBLIC_URL +
+          `/icons/bodyParts/${item.replace(/\s/g, "")}.png`
+        }
         alt="body part"
       />
       <Typography style={{ fontWeight: "bold", color: "rgb(244,70,48)" }}>
