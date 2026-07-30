@@ -7,8 +7,7 @@ import App from "./App.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  /* КЛУЧНАТА ПОПРАВКА: Му кажуваме на рутерот дека почетната точка на GitHub Pages е /fit_life */
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="/fit_life">
     <App />
   </BrowserRouter>,
 );
