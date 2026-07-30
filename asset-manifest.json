@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fit_life/static/css/main.b7ac262c.css",
-    "main.js": "/fit_life/static/js/main.6c86ff46.js",
+    "main.js": "/fit_life/static/js/main.f32e264d.js",
     "static/media/hero.png": "/fit_life/static/media/hero.a6e415d8fcfd0264df84.png",
     "static/media/target.png": "/fit_life/static/media/target.41f9a72c9d3b4ed3d3af.png",
     "static/media/right-arrow.png": "/fit_life/static/media/right-arrow.2f417926391c85c2479c.png",
@@ -12,10 +12,10 @@
     "static/media/fbIcon.svg": "/fit_life/static/media/fbIcon.513ba589209ed58ac6a5df1d20e2be40.svg",
     "index.html": "/fit_life/index.html",
     "main.b7ac262c.css.map": "/fit_life/static/css/main.b7ac262c.css.map",
-    "main.6c86ff46.js.map": "/fit_life/static/js/main.6c86ff46.js.map"
+    "main.f32e264d.js.map": "/fit_life/static/js/main.f32e264d.js.map"
   },
   "entrypoints": [
     "static/css/main.b7ac262c.css",
-    "static/js/main.6c86ff46.js"
+    "static/js/main.f32e264d.js"
   ]
 }
