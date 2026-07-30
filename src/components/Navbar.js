@@ -60,13 +60,13 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <a
-          href="/#exercises"
+        <Link
+          to="/#exercises"
           style={{ textDecoration: "none", color: "rgb(244,70,48)" }}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           Exercises
-        </a>
+        </Link>
         <Link
           to="/supplementation"
           style={{ textDecoration: "none", color: "rgb(244,70,48)" }}
