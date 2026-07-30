@@ -63,7 +63,17 @@ const Navbar = () => {
         <Link
           to="/#exercises"
           style={{ textDecoration: "none", color: "rgb(244,70,48)" }}
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => {
+            setMenuOpen(!menuOpen); // Го затвора менито
+
+            // Пронаоѓање на елементот во DOM и мазно скролање
+            setTimeout(() => {
+              const element = document.getElementById("exercises");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }, 150); // Мала пауза за рутерот безбедно да ја вчита страницата
+          }}
         >
           Exercises
         </Link>
