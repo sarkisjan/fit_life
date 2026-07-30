@@ -30,7 +30,7 @@ const Footer = () => (
       {/* Social Media Icons */}
       <div className="footer-social">
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=61561458607638"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-social-link"
@@ -39,7 +39,7 @@ const Footer = () => (
         </a>
 
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/fitlife.hub8/"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-social-link"
